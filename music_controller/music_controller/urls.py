@@ -18,6 +18,6 @@ from django.urls import path,include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/',include('api.urls'))  #if i dont write api/ then by default webpage will server me the the page now everytime i run the server i will have to write /api to reach out the this app i.e api page
+    path('api/',include('api.urls')),  #if i dont write api/ then by default webpage will server me the the page now everytime i run the server i will have to write /api to reach out the this app i.e api page
     path('',include('frontend.urls'))
 ]
